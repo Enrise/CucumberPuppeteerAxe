@@ -1,0 +1,10 @@
+language: minimal
+
+services:
+  - docker
+
+install:
+  - docker-compose up -d app
+
+script:
+  - docker-compose run test

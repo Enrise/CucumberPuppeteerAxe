@@ -1,0 +1,24 @@
+{
+  "name": "cucumber-puppeteer-axe",
+  "version": "1.0.0",
+  "description": "This package contains step definitions to test webpages with for accessibility issues with Axe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enrise/CucumberPuppeteerAxe.git"
+  },
+  "keywords": [
+    "cucumber",
+    "puppeteer",
+    "axe"
+  ],
+  "author": "Henk-Jan van Voorthuijsen @ Enrise",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Enrise/CucumberPuppeteerAxe/issues"
+  },
+  "homepage": "https://github.com/Enrise/CucumberPuppeteerAxe#readme"
+}

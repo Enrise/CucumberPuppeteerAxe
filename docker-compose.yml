@@ -1,0 +1,29 @@
+version: "3.3"
+
+services:
+  app:
+    image: nginx:stable-alpine
+    networks:
+      - CPA
+    volumes:
+      - ./test/pages:/usr/share/nginx/html:ro
+    working_dir: /usr/share/nginx/html
+
+  test:
+    image: enrise/puppeteer-cucumber:latest
+    volumes:
+      - ./features:/home/node/app/features
+      - ./test:/home/node/app/test
+    networks:
+      - CPA
+    working_dir: /home/node/app/test/
+    entrypoint:
+      - "../node_modules/.bin/cucumber-js"
+
+networks:
+  CPA:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.200.0/24
