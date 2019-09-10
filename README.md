@@ -7,7 +7,9 @@ Step definitions to test webpages for accessibility issues with AxeCore
 
 This setup relies on the package [cucumber-puppeteer](https://www.npmjs.com/package/cucumber-puppeteer) to work properly.
 
-Checkout [this project](https://github.com/Enrise/accessibility-checker-infrastructure) to see how you can use this in your project.
+Checkout [this setup](https://github.com/Enrise/accessibility-checker-infrastructure) to see how you can use this in your project.
+
+If you're using docker then you should checkout [puppeteer-cucumber](https://github.com/Enrise/puppeteer-cucumber). It is a pre-build docker container for testing with cucumber and puppeteer. This package is also included so you can check for accessibility issues right away!
 
 ## Available steps
 
