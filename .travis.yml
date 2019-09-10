@@ -1,13 +1,13 @@
-language: minimal
+language: node_js
 
 services:
   - docker
 
 install:
-  - docker-compose up -d app
+  - npm run start
 
 script:
-  - docker-compose run test
+  - npm test
 
 deploy:
   provider: npm
