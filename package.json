@@ -4,7 +4,8 @@
   "description": "This package contains step definitions to test webpages with for accessibility issues with Axe",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "docker-compose up -d app",
+    "test": "docker-compose run test"
   },
   "repository": {
     "type": "git",
