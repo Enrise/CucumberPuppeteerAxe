@@ -1,7 +1,7 @@
 {
   "name": "cucumber-puppeteer-axe",
-  "version": "0.1.1",
-  "description": "This package contains step definitions to test webpages with for accessibility issues with Axe",
+  "version": "0.1.2",
+  "description": "This package contains step definitions to test webpages for accessibility issues with AxeCore",
   "main": "index.js",
   "scripts": {
     "start": "docker-compose up -d app",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Enrise/CucumberPuppeteerAxe/issues"
   },
-  "homepage": "https://github.com/Enrise/CucumberPuppeteerAxe#readme"
+  "homepage": "https://github.com/Enrise/CucumberPuppeteerAxe#readme",
+  "dependencies": {
+    "cucumber-puppeteer": "^1.0.15"
+  }
 }
