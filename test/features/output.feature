@@ -10,6 +10,7 @@ Scenario: One error
         {
             "violations": [
                 {
+                    "id": "test-rule",
                     "impact": "serious",
                     "description": "test description",
                     "helpUrl": "https://test.url",
@@ -26,7 +27,7 @@ Scenario: One error
     Then the generated output should look like
         """
 
-         serious   Violation of undefined with 1 occurrences!
+         serious   Violation of test-rule with 1 occurrences!
           test description. Invalid elements at:
            - html   <html string/>
           For details, see: https://test.url
@@ -40,6 +41,7 @@ Scenario: Multiple nodes
         {
             "violations": [
                 {
+                    "id": "test-rule",
                     "impact": "serious",
                     "description": "test description",
                     "helpUrl": "https://test.url",
@@ -60,7 +62,7 @@ Scenario: Multiple nodes
     Then the generated output should look like
         """
         
-         serious   Violation of undefined with 2 occurrences!
+         serious   Violation of test-rule with 2 occurrences!
           test description. Invalid elements at:
            - html   <html string/>
            - div div2   undefined
@@ -76,6 +78,7 @@ Scenario: Multiple violations
         {
             "violations": [
                 {
+                    "id": "test-rule",
                     "impact": "serious",
                     "description": "1th test description",
                     "helpUrl": "https://test1.url",
@@ -103,7 +106,7 @@ Scenario: Multiple violations
     Then the generated output should look like
         """ 
 
-         serious   Violation of undefined with 1 occurrences!
+         serious   Violation of test-rule with 1 occurrences!
           1th test description. Invalid elements at:
            - html   <html string/>
           For details, see: https://test1.url
