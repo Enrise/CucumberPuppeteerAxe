@@ -1,6 +1,6 @@
 {
   "name": "cucumber-puppeteer-axe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package contains step definitions to test webpages for accessibility issues with AxeCore",
   "main": "index.js",
   "scripts": {
