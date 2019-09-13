@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/Enrise/CucumberPuppeteerAxe.svg?branch=master)](https://travis-ci.org/Enrise/CucumberPuppeteerAxe)
 
 # CucumberPuppeteerAxe
+
 Step definitions to test webpages for accessibility issues with AxeCore
 
 ## How to use
@@ -54,3 +55,13 @@ Then the page excluding "#content img" should be accessible
 ```gherkin
 Then the section "#homepage" excluding "img" should be accessible
 ```
+
+## Output
+
+All output is directly visible in the command line:
+
+![Example output in the pipeline](example-output.jpg)
+
+If you can't find your elements it is quite easy to find them with the unique selector shown in the output (colored cyan) and [add custom styling](https://developer.chrome.com/devtools/docs/elements-styles#styles_add_new) to them.
+
+![Show the error](show-error.jpg)
