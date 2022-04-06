@@ -1,4 +1,4 @@
-const { AxePuppeteer } = require('axe-puppeteer');
+const { AxePuppeteer } = require('@axe-core/pupeeteer');
 const { expect } = require('chai');
 const axeResultsFormatter = require('./axeResultsFormatter');
 
