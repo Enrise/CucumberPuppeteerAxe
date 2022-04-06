@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Enrise/CucumberPuppeteerAxe.svg?branch=master)](https://travis-ci.org/Enrise/CucumberPuppeteerAxe)
+[![Build Status](https://app.travis-ci.com/Enrise/CucumberPuppeteerAxe.svg?branch=master)](https://app.travis-ci.com/Enrise/CucumberPuppeteerAxe)
 
 # CucumberPuppeteerAxe
 
