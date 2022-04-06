@@ -1,4 +1,4 @@
-const { Then, Given } = require('@axe-core/pupeeteer');
+const { Then, Given } = require('cucumber');
 const { accessibilityCheck } = require('../support/accessibilityCheck');
 
 Given('I disable the accessibility rule(s) {string}', function(rule) {
