@@ -4,7 +4,9 @@ services:
   app:
     image: nginx:stable-alpine
     networks:
-      - CPA
+      CPA:
+        aliases:
+          - "cucumber-puppeteer-axe.com"
     volumes:
       - ./test/pages:/usr/share/nginx/html:ro
     working_dir: /usr/share/nginx/html
